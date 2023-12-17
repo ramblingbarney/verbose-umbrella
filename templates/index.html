@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} Welcome to Trends {% endblock %}</h1>
+    <h1>{% block title %} {{terms}} {% endblock %}</h1>
+    <h2>Charted Over Time</h2>
+    <img src={{url_ot}} alt="Charted Terms Over Time" height="100%" width="100%">
+    <h2>Charted Interest By Region</h2>
+    <img src={{url_i}} alt="Charted Interest By Region" height="100%" width="100%">
 {% endblock %}
